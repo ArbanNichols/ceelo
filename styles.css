@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #071a1e;
+  background: repeating-linear-gradient(#071a1e 0%, #274249) fixed;
+}
+
+.dice {
+  box-sizing: content-box !important;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin: 0 0 0 0; /* top left bottom right */
+  border: solid black 10px;
+  background: gainsboro;
+  text-align: center;
+}
+
+div.dice-display {
+  font-size: 100pt;
+}
+
+.score {
+  margin: 16px 0 16px 0;
+  color: gainsboro;
+}
+
+.dice-one {
+}
+
+.dice-two {
+}
+
+.dice-three {
+}
