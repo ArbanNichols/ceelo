@@ -7,6 +7,14 @@ body {
   background: repeating-linear-gradient(#071a1e 0%, #274249) fixed;
 }
 
+.scene {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
 .dice {
   box-sizing: content-box !important;
   display: inline-block;
