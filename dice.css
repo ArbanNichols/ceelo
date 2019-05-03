@@ -14,16 +14,14 @@
 }
 
 .dice-one {
-  animation: idle linear infinite 6s;
+  
 }
 
 .dice-two {
-  animation: idle linear infinite 6s;
 
 }
 
 .dice-three {
-  animation: idle linear infinite 6s;
 }
 
 .face {
@@ -37,6 +35,7 @@
   font-size: 30px;
 }
 
+/* 3 */
 .face-front {
   background: hsla(  0, 100%, 50%, 0.6);
   transform: rotateY(  0deg) translateZ(75px);
@@ -58,6 +57,7 @@
   place-self: center;
 }
 
+/* 4 */
 .face-back {
  background: hsla(0, 100%, 50%, 0.6);
  transform: rotateY(180deg) translateZ(75px); 

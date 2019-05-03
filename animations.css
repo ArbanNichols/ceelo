@@ -1,3 +1,7 @@
+.idle {
+  animation: idle linear infinite 6s;
+}
+
 @keyframes idle {
     from {
         transform: translateZ(-75px) rotateX(0deg) rotateY(0deg);
@@ -8,6 +12,9 @@
     }
 }
 
+.spin {
+	animation: spin 0.8s linear 1;
+}
 
 @keyframes spin {
   0% {
@@ -24,6 +31,10 @@
   }
 }
 
-.show-top {
-    transform: translateZ(-75px) rotateX(-90deg);
-}
+.show-top    { transform: translateZ(-75px) rotateX(-90deg); }
+.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
