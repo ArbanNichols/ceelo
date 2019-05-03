@@ -30,3 +30,7 @@ body {
   grid-row: 3 / 4;
   place-self: center;
 }
+
+#roll {
+  margin: 100px;
+}
