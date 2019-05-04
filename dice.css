@@ -29,8 +29,9 @@
     display: grid;
     grid-template-columns: 50px, 50px, 50px;
     grid-template-rows: 50px, 50px, 50px;
-    border: 1px solid hsla(0, 100%, 50%, 0.3);;
-    font-size: 30px;
+    border: 1px solid hsla(0, 100%, 50%, 0.2);
+    color: whitesmoke;
+    font-size: 24pt;
 }
 
 /* 3 */
