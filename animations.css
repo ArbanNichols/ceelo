@@ -1,0 +1,40 @@
+.idle {
+  animation: idle linear infinite 6s;
+}
+
+@keyframes idle {
+    from {
+        transform: translateZ(-75px) rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: translateZ(-75px) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.spin {
+	animation: spin 0.8s linear 1;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translateZ(-75px) scale(1) rotate3d(-1, 1, 0, 0deg);
+            transform: translateZ(-75px) scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: translateZ(-75px) scale(1.4) rotate3d(-1, 1, 0, 180deg);
+            transform: translateZ(-75px) scale(1.4) rotate3d(-1, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-75px) scale(1) rotate3d(-1, 1, 0, 360deg);
+            transform: translateZ(-75px) scale(1) rotate3d(-1, 1, 0, 360deg);
+  }
+}
+
+.show-top    { transform: translateZ(-75px) rotateX(-90deg); }
+.show-front  { transform: translateZ(-75px) rotateY(   0deg); }
+.show-right  { transform: translateZ(-75px) rotateY( -90deg); }
+.show-back   { transform: translateZ(-75px) rotateY(-180deg); }
+.show-left   { transform: translateZ(-75px) rotateY(  90deg); }
+.show-top    { transform: translateZ(-75px) rotateX( -90deg); }
+.show-bottom { transform: translateZ(-75px) rotateX(  90deg); }

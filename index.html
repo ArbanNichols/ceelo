@@ -1,22 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Ceelo: Three Dice" />
-    <title>Ceelo</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ceelo: Three Dice" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+  <title>Ceelo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dice.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+  <div class="score">
+    <p>Let's Roll</p>
+  </div>
+  <div class="scene">
     <div class="dice-display">
-      <p class="dice dice-one">4</p>
-      <p class="dice dice-two">5</p>
-      <p class="dice dice-three">6</p>
+      <div class="dice dice-one idle">
+        <div class="face face-front">
+          <div class="front-pip-1">&#11044</div>
+          <div class="front-pip-2">&#11044</div>
+          <div class="front-pip-3">&#11044</div>
+        </div>
+        <div class="face face-back">
+          <div class="back-pip-1">&#11044</div>
+          <div class="back-pip-2">&#11044</div>
+          <div class="back-pip-3">&#11044</div>
+          <div class="back-pip-4">&#11044</div>
+        </div>
+        <div class="face face-right">
+          <div class="right-pip-1">&#11044</div>
+          <div class="right-pip-2">&#11044</div>
+          <div class="right-pip-3">&#11044</div>
+          <div class="right-pip-4">&#11044</div>
+          <div class="right-pip-5">&#11044</div>
+        </div>
+        <div class="face face-left">
+          <div class="left-pip-1">&#11044</div>
+          <div class="left-pip-2">&#11044</div>
+        </div>
+        <div class="face face-top">
+          <div class="top-pip-1">&#11044</div>
+          <div class="top-blank-1"></div>
+          <div class="top-blank-2"></div>
+        </div>
+        <div class="face face-bottom">
+          <div class="bottom-pip-1">&#11044</div>
+          <div class="bottom-pip-2">&#11044</div>
+          <div class="bottom-pip-3">&#11044</div>
+          <div class="bottom-pip-4">&#11044</div>
+          <div class="bottom-pip-5">&#11044</div>
+          <div class="bottom-pip-6">&#11044</div>
+        </div>
+      </div>
     </div>
-    <div class="score">
-      <p>Let's Roll</p>
+    <div class="dice-display">
+      <div class="dice dice-two idle">
+        <div class="face face-front">
+          <div class="front-pip-1">&#11044</div>
+          <div class="front-pip-2">&#11044</div>
+          <div class="front-pip-3">&#11044</div>
+        </div>
+        <div class="face face-back">
+          <div class="back-pip-1">&#11044</div>
+          <div class="back-pip-2">&#11044</div>
+          <div class="back-pip-3">&#11044</div>
+          <div class="back-pip-4">&#11044</div>
+        </div>
+        <div class="face face-right">
+          <div class="right-pip-1">&#11044</div>
+          <div class="right-pip-2">&#11044</div>
+          <div class="right-pip-3">&#11044</div>
+          <div class="right-pip-4">&#11044</div>
+          <div class="right-pip-5">&#11044</div>
+        </div>
+        <div class="face face-left">
+          <div class="left-pip-1">&#11044</div>
+          <div class="left-pip-2">&#11044</div>
+        </div>
+        <div class="face face-top">
+          <div class="top-pip-1">&#11044</div>
+          <div class="top-blank-1"></div>
+          <div class="top-blank-2"></div>
+        </div>
+        <div class="face face-bottom">
+          <div class="bottom-pip-1">&#11044</div>
+          <div class="bottom-pip-2">&#11044</div>
+          <div class="bottom-pip-3">&#11044</div>
+          <div class="bottom-pip-4">&#11044</div>
+          <div class="bottom-pip-5">&#11044</div>
+          <div class="bottom-pip-6">&#11044</div>
+        </div>
+      </div>
     </div>
+    <div class="dice-display">
+      <div class="dice dice-three idle">
+        <div class="face face-front">
+          <div class="front-pip-1">&#11044</div>
+          <div class="front-pip-2">&#11044</div>
+          <div class="front-pip-3">&#11044</div>
+        </div>
+        <div class="face face-back">
+          <div class="back-pip-1">&#11044</div>
+          <div class="back-pip-2">&#11044</div>
+          <div class="back-pip-3">&#11044</div>
+          <div class="back-pip-4">&#11044</div>
+        </div>
+        <div class="face face-right">
+          <div class="right-pip-1">&#11044</div>
+          <div class="right-pip-2">&#11044</div>
+          <div class="right-pip-3">&#11044</div>
+          <div class="right-pip-4">&#11044</div>
+          <div class="right-pip-5">&#11044</div>
+        </div>
+        <div class="face face-left">
+          <div class="left-pip-1">&#11044</div>
+          <div class="left-pip-2">&#11044</div>
+        </div>
+        <div class="face face-top">
+          <div class="top-pip-1">&#11044</div>
+          <div class="top-blank-1"></div>
+          <div class="top-blank-2"></div>
+        </div>
+        <div class="face face-bottom">
+          <div class="bottom-pip-1">&#11044</div>
+          <div class="bottom-pip-2">&#11044</div>
+          <div class="bottom-pip-3">&#11044</div>
+          <div class="bottom-pip-4">&#11044</div>
+          <div class="bottom-pip-5">&#11044</div>
+          <div class="bottom-pip-6">&#11044</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
     <button id="roll">Roll</button>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
