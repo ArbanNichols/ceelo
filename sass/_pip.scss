@@ -1,0 +1,13 @@
+$positions: top-left, top-right, mid, mid-left, mid-right, bottom-left,
+  bottom-right;
+
+@mixin center {
+  place-self: center;
+}
+
+@each $position in $positions {
+  .pip__#{$position} {
+    @include center();
+    grid-area: #{$position};
+  }
+}

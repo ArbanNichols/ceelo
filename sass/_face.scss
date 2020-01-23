@@ -1,0 +1,50 @@
+$face-width: 150px !default;
+$face-height: 150px !default;
+$face-color: hsla(0, 100%, 50%, 0.6) !default;
+$face-border: 1px solid hsla(0, 100%, 50%, 0.2) !default;
+
+$transforms-map: (
+  'front': (
+    rotateY(0deg) translateZ(75px),
+  ),
+  'back': (
+    rotateY(180deg) translateZ(75px),
+  ),
+  'right': (
+    rotateY(90deg) translateZ(75px),
+  ),
+  'left': (
+    rotateY(-90deg) translateZ(75px),
+  ),
+  'top': (
+    rotateX(90deg) translateZ(75px),
+  ),
+  'bottom': (
+    rotateX(-90deg) translateZ(75px),
+  ),
+);
+
+.face {
+  position: absolute;
+  width: $face-width;
+  height: $face-height;
+  display: grid;
+  grid-column-gap: none;
+  grid-row-gap: none;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  grid-template-areas:
+    'top-left blank-1 top-right'
+    'mid-left mid mid-right'
+    'bottom-left blank-2 bottom-right';
+  border: $face-border;
+  background: $face-color;
+  color: whitesmoke;
+  font-size: 24pt;
+}
+
+@each $side, $value in $transforms-map {
+  .face__#{$side} {
+    transform: $value;
+  }
+}

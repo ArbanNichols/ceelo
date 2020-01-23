@@ -1,0 +1,91 @@
+.dice-display {
+  width: 150px;
+  height: 150px;
+  perspective: 450px;
+}
+
+.dice {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-75px);
+  transition: transform 0.4s;
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  grid-column-gap: none;
+  grid-row-gap: none;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  grid-template-areas: "top-left blank-1 top-right" "mid-left mid mid-right" "bottom-left blank-2 bottom-right";
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  background: rgba(255, 0, 0, 0.6);
+  color: whitesmoke;
+  font-size: 24pt;
+}
+
+.face__front {
+  transform: rotateY(0deg) translateZ(75px);
+}
+
+.face__back {
+  transform: rotateY(180deg) translateZ(75px);
+}
+
+.face__right {
+  transform: rotateY(90deg) translateZ(75px);
+}
+
+.face__left {
+  transform: rotateY(-90deg) translateZ(75px);
+}
+
+.face__top {
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+.face__bottom {
+  transform: rotateX(-90deg) translateZ(75px);
+}
+
+.pip__top-left {
+  place-self: center;
+  grid-area: top-left;
+}
+
+.pip__top-right {
+  place-self: center;
+  grid-area: top-right;
+}
+
+.pip__mid {
+  place-self: center;
+  grid-area: mid;
+}
+
+.pip__mid-left {
+  place-self: center;
+  grid-area: mid-left;
+}
+
+.pip__mid-right {
+  place-self: center;
+  grid-area: mid-right;
+}
+
+.pip__bottom-left {
+  place-self: center;
+  grid-area: bottom-left;
+}
+
+.pip__bottom-right {
+  place-self: center;
+  grid-area: bottom-right;
+}
+
+/*# sourceMappingURL=output.css.map */
