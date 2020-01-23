@@ -88,4 +88,17 @@
   grid-area: bottom-right;
 }
 
+.idle {
+  animation: idle linear infinite 6s;
+}
+
+@keyframes idle {
+  from {
+    transform: translateZ(-75px) rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: translateZ(-75px) rotateX(360deg) rotateY(360deg);
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
